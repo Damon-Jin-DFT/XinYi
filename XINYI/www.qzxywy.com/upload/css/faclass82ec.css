@@ -1,0 +1,1079 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  font-family: "PingFang SC Medium","微软雅黑","arial", sans-serif;
+  word-wrap: normal;
+  word-break: normal;
+}
+/*通用*/
+a:active,
+a:hover {
+  color: #da251d;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #da251d;
+  text-decoration: underline;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+.fa_ani * {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.5s;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.5s;
+  /* Opera */
+}
+.fa_ani *:before {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.5s;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.5s;
+  /* Opera */
+}
+.fa_ani *:after {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.5s;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.5s;
+  /* Opera */
+}
+a {
+  cursor: pointer;
+}
+body,
+html {
+  overflow-x: hidden !important;
+}
+a:focus,
+a:active,
+a:hover,
+a:visited {
+  outline: none !important;
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+/*
+.w_grid-000 > div > .p_gridbox {
+overflow: visible;
+}
+.w_grid-000 > div > .p_gridbox:before, .w_grid-000 > div > .p_gridbox:after {
+clear: both;
+display: table;
+content: " ";
+min-height: 0px;
+}
+*/
+.fa_clearfix:before,
+.fa_clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.p_page .pageNum.active,
+.p_page .next:active,
+.p_page .next:hover,
+.p_page .pageNum:hover,
+.p_page .pageNum:active,
+.p_page .pre:active,
+.p_page .pre:hover {
+  background-color: #da251d;
+  border-color: #da251d;
+}
+.p_pagebox .next,
+.p_pagebox .pre {
+  background-color: #da251d;
+}
+#easy_zoom {
+  transition: all 0s;
+  -moz-transition: all 0s;
+  /* Firefox 4 */
+  -webkit-transition: all 0s;
+  /* Safari 和 Chrome */
+  -o-transition: all 0s;
+}
+#easy_zoom * {
+  transition: all 0s;
+  -moz-transition: all 0s;
+  /* Firefox 4 */
+  -webkit-transition: all 0s;
+  /* Safari 和 Chrome */
+  -o-transition: all 0s;
+  /* Opera */
+}
+.p_ProductDetail img,
+.p_NewsDetail img,
+.p_contentBox img {
+  max-width: 100%;
+}
+.p_content .reset_style {
+  line-height: 2;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open>.dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open>.dropdown-toggle.btn-primary.focus .p_pagebox .next,
+.p_pagebox .pre {
+  background-color: #da251d;
+}
+@media only screen and (min-width: 769px) {
+  .fa_pchide {
+    display: none!important;
+  }
+  .fa_NewsdtTit{
+    font-size:26px!important;
+  }
+  .fa_pctit{
+    font-size:26px!important;
+  }
+}
+@media only screen and (max-width:768px) {
+  .fa_NewsdtTit{
+    font-size:22px!important;
+  }
+  .fa_motit{
+    font-size:20px!important;
+  }
+  .fa_mohide {
+    display: none!important;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 1.42857143;
+  }
+  input::-moz-placeholder {
+    font-size: 14px;
+    line-height: 1.42857143;
+  }
+  input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1.42857143;
+  }
+  input:-moz-placeholder {
+    font-size: 14px;
+    line-height: 1.42857143;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*弹性布局*/
+.fa_flexline {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.fa_flexwrap {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.fa_flex_between {
+  -webkit-box-pack: justify;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.fa_flex_Xend {
+  -webkit-box-pack: end;
+  -moz-justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.fa_flex_Xcenter {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.fa_flex_Yend {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.fa_flex_Ycenter {
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.fa_centerY {
+  position: relative;
+  top: 50%;
+  /*偏移*/
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*图片限制*/
+.fa_Img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.fa_Img img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+.fa_Imgmax img {
+  max-width: 100%!important;
+  max-height: 100%!important;
+  min-width: 0%!important;
+  min-height: 0%!important;
+  width: auto!important;
+  height: auto!important;
+}
+.fa_Imgmin img {
+  object-fit: cover;
+}
+.fa_li:hover .fa_Img img{
+  transform: translate(-50%, -50%) scale(1.2);
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*字体大小*/
+@media only screen and (max-width:768px) {
+  .fa_mf26 {
+    font-size: 26px!important;
+  }
+  .fa_mf24 {
+    font-size: 24px!important;
+  }
+  .fa_mf22 {
+    font-size: 22px!important;
+  }
+  .fa_mf20 {
+    font-size: 20px!important;
+  }
+  .fa_mf18 {
+    font-size: 18px!important;
+  }
+  .fa_mf16 {
+    font-size: 16px!important;
+  }
+  .fa_mf14 {
+    font-size: 14px!important;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*内页导航*/
+.p_problemCategory {
+  display: none;
+}
+.fa_PageNav {
+  max-width:1620px;
+  position:relative;
+  display:flex;
+  width:96%;
+  padding:30px 10px;
+  border-bottom:#000 solid 2px;
+  ;
+  margin:30px auto;
+  justify-content:space-between;
+}
+.fa_PageNav .fa_tit{
+  width:30%;
+}
+.fa_PageNav .fa_tit b{
+  font-size:32px;
+  color:#000;
+}
+.fa_PageNav .fa_tit span{
+  font-size: 14px;
+  color:#999;
+  margin-left:20px;
+}
+.fa_PageNav .fa_list{
+  width:70%;
+  text-align:right;
+}
+.fa_PageNav a {
+  display: inline-block;
+  transition: all 0.5s;
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  padding:10px 30px;
+  text-align:center;
+  border:#eee solid 1px;
+}
+.fa_PageNav a:hover,
+.fa_PageNav a.fa_navon {
+  color: #fff;
+  background:#da251d;
+  border-color:#da251d;
+}
+@media only screen and (max-width:768px) {
+  .p_btn-hide {
+    background: #333;
+  }
+  .p_btn-hide .p_c-fff {
+    background: #333;
+  }
+  .fa_PageNav {
+    display: none;
+  }
+  .p_problemCategory {
+    display: block;
+    width:100%;
+    padding:20px;
+  }
+  .p_problemCategory .btn-primary {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    background: #da251d;
+    padding: 10px 20px;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*相关产品*/
+.fa_AbList {
+  margin: 80px 0 30px;
+}
+.fa_AbList h3 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.fa_AbList .fa_Abli {
+  display: block;
+  background: #fafafa;
+}
+.fa_AbList .fa_Abli .fa_ABli_img {
+  overflow: hidden;
+  width: 100%;
+}
+.fa_AbList .fa_Abli .fa_ABli_img img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.fa_AbList .fa_Abli:nth-child(4n) {
+  margin-right: 0;
+}
+.fa_AbList .fa_Abli:hover img {
+  transform: translate(-50%, -50%) scale(1.2);
+  -ms-transform: translate(-50%, -50%) scale(1.2);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+  /* Safari 和 Chrome */
+  -o-transform: translate(-50%, -50%) scale(1.2);
+  /* Opera */
+  -moz-transform: translate(-50%, -50%) scale(1.2);
+  /* Firefox */
+}
+.fa_AbList .fa_li .fa_ABli_tit {
+  padding: 20px 15px;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media only screen and (max-width:768px) {
+  .fa_AbList {
+    margin: 30px 0;
+  }
+  .fa_AbList h3 {
+    font-size: 18px;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*产品分类标题*/
+.fa_PageCate .fa_CateTit h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #da251d;
+  text-align: center;
+}
+.fa_PageCate .fa_CateTit article {
+  font-size: 16px;
+  line-height: 2;
+  margin: auto;
+  max-width: 800px;
+  color: #666;
+  width: 80%;
+  text-align: center;
+}
+.fa_PageCate {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width:768px) {
+  .fa_PageCate .fa_CateTit h3 {
+    font-size: 20px;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*排列布局  fa_ln(一排n个)*/
+.fa_l2 {
+  display: block;
+  width: calc((100% - 50px) / 2);
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.fa_l3 {
+  display: block;
+  width: calc((100% - 100px) / 3);
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.fa_l4 {
+  display: block;
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.fa_l5 {
+  display: block;
+  width: calc((100% - 80px) / 5);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 769px) {
+  .fa_l2:nth-child(2n),
+  .fa_l3:nth-child(3n),
+  .fa_l4:nth-child(4n),
+  .fa_l5:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width:768px) {
+  .fa_l2,
+  .fa_l3,
+  .fa_l4,
+  .fa_l5 {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*加载动效   topshow（从上往下）fa_LeftShow （从左往右）  */
+.delighter {
+  position: relative;
+}
+.fa_TopShow,
+.fa_LeftShow,
+.fa_RightShow,
+.fa_BottomShow {
+  overflow: hidden;
+}
+.fa_TopShow.delighter:before {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(0%);
+  display: block;
+  background: #fff;
+  z-index: 10;
+  content: "";
+  transition: 1s cubic-bezier(0.68, 0.54, 0.14, 0.96) 0.5s;
+}
+.fa_TopShow.started.delighter:before {
+  transform: translateY(100%);
+}
+.fa_LeftShow.delighter:before {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  display: block;
+  background: #fff;
+  z-index: 10;
+  content: "";
+  transition: 1s cubic-bezier(0.68, 0.54, 0.14, 0.96) 0.5s;
+}
+.fa_LeftShow.started.delighter:before {
+  transform: translateX(100%);
+}
+.fa_RightShow.delighter:before {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  display: block;
+  background: #fff;
+  z-index: 10;
+  content: "";
+  transition: 1s cubic-bezier(0.68, 0.54, 0.14, 0.96) 0.5s;
+}
+.fa_RightShow.started.delighter:before {
+  transform: translateX(-100%);
+}
+.fa_BottomShow.delighter:before {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  display: block;
+  background: #fff;
+  z-index: 10;
+  content: "";
+  transition: 1s cubic-bezier(0.68, 0.54, 0.14, 0.96) 0.5s;
+}
+.fa_BottomShow.started.delighter:before {
+  transform: translateY(-100%);
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*swiper*/
+.fa_swp_btn>div {
+  /*banner*/
+  position: absolute;
+  z-index: 20;
+  transform: translateY(-50%);
+  font-size: 3vw;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+  top: 50%;
+  cursor: pointer;
+}
+.fa_swp_btn .fa_btn_l {
+  left: 2vw;
+}
+.fa_swp_btn .fa_btn_r {
+  right: 2vw;
+}
+.fa_list_btn>div {
+  /*列表*/
+  position: absolute;
+  z-index: 20;
+  transform: translateY(-50%);
+  font-size: 2vw;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  top:50%;
+}
+.fa_list_btn .fa_l {
+  left: 0;
+}
+.fa_list_btn .fa_r {
+  right: 0;
+}
+.fa_pagination {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+.fa_pagination span {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  border-radius: 500px;
+  margin: 0 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.fa_pagination span.swiper-pagination-bullet-active {
+  background: rgba(255, 255, 255, 1);
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*更多按钮*/
+@media only screen and (min-width: 769px) {
+  /*  用法
+  <div class="fa_More1 wow fadeInUp">
+  <a href="/Case.html"><span>查看更多</span></a>
+  </div>
+  */
+  .fa_More1 a {
+    display: inline-block;
+    min-width: 180px;
+    line-height: 60px;
+    position: relative;
+    text-align: center;
+  }
+  .fa_More1 a span {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+  }
+  .fa_More1 a::before,
+  .fa_More a::after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
+    display: block;
+  }
+  .fa_More1 a::before {
+    background: #da251d;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .fa_More1 a::after {
+    border: #da251d solid 2px;
+    width: 0%;
+    height: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .fa_More1 a:hover::before {
+    width: 80%;
+    height: 80%;
+  }
+  .fa_More1 a:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  /*  用法
+  <div class="fa_More2 wow fadeInUp">
+  <a href="/Case.html"><span>查看更多</span></a>
+  </div>
+  */
+  .fa_More2 {
+    text-align: center;
+  }
+  .fa_More2 a {
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    line-height: 50px;
+  }
+  .fa_More2 a span {
+    position: relative;
+    z-index: 10;
+    transition: all 0.5s;
+    display: block;
+    color: #fff;
+  }
+  .fa_More2 a span:before {
+    content: "GO⇢";
+    position: absolute;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+  }
+  .fa_More2 a:hover span {
+    transform: translateY(-100%);
+  }
+  .fa_More2 a:before {
+    background: #da251d;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    transition: all 0.5s;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .fa_More2 a:hover:before {
+    width: 60%;
+    background: #000;
+  }
+  .fa_More2 a:hover {
+    color: #fff;
+  }
+  .fa_More2 a:after {
+    position: absolute;
+    width: 100%;
+    transform: translate(100%, -50%);
+    display: block;
+    left: 0;
+    background: #da251d;
+    opacity: 0.5;
+    transition: all 0.5s;
+    height: 3px;
+    content: "";
+    top: 50%;
+  }
+  .fa_More2 a:hover:after {
+    transform: translate(-100%, -50%);
+    background: #fff;
+  }
+  /*  用法
+  <div class="fa_More3">
+  <a href="#">
+  <i></i>
+  <span>查看更多</span>
+  <i></i>
+  </a>
+  </div>
+  */
+  .fa_More3 {
+    padding: 20px;
+  }
+  .fa_More3 a {
+    display: inline-block;
+    position: relative;
+    margin: 10px auto;
+  }
+  .fa_More3 a span {
+    display: block;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    min-width: 200px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .fa_More3 a::before {
+    position: absolute;
+    background: #da251d;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  .fa_More3 a:hover::before {
+    width: 85%;
+    height: 70%;
+  }
+  .fa_More3 a span::before,
+  .fa_More3 a span::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+  }
+  .fa_More3 a span::before {
+    width: calc(100% - 6px);
+    height: 0;
+    border-left: #da251d solid 1px;
+    border-right: #da251d solid 1px;
+  }
+  .fa_More3 a:hover span::before {
+    height: calc(100% + 6px);
+  }
+  .fa_More3 a span::after {
+    height: calc(100% - 6px);
+    width: 0;
+    border-top: #da251d solid 1px;
+    border-bottom: #da251d solid 1px;
+  }
+  .fa_More3 a:hover span::after {
+    width: calc(100% + 6px);
+  }
+  .fa_More3 a i {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s 0.5s;
+  }
+  .fa_More3 a i:first-child {
+    width: 0;
+    height: calc(100% + 4px);
+    border-top: #da251d solid 1px;
+    border-bottom: #da251d solid 1px;
+  }
+  .fa_More3 a i:last-child {
+    height: 0;
+    width: calc(100% + 4px);
+    border-left: #da251d solid 1px;
+    border-right: #da251d solid 1px;
+  }
+  .fa_More3 a:hover i:first-child {
+    width: calc(100% - 4px);
+  }
+  .fa_More3 a:hover i:last-child {
+    height: calc(100% - 4px);
+  }
+  /*  用法
+  <div class="fa_More2 wow fadeInUp">
+  <a href="/Case.html"><span>查看更多</span></a>
+  </div>
+  */
+  .fa_More4 a {
+    display: inline-block;
+    position: relative;
+    min-width: 180px;
+    text-align: center;
+    line-height: 50px;
+    padding: 0 10px;
+  }
+  .fa_More4 a span {
+    display: inline-block;
+    color: #da251d;
+    position: relative;
+    z-index: 10;
+  }
+  .fa_More4 a::before,
+  .fa_More4 a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    content: "";
+    border: #da251d solid 1px;
+    transition: all 0.5s;
+  }
+  .fa_More4 a:hover::before {
+    transform: translate(-3px, -3px);
+  }
+  .fa_More4 a:hover::after {
+    transform: translate(3px, 3px);
+  }
+  /*用法
+  <div class="fa_More5  wow fadeInUp ">
+  <a href="/intro/6.html">进一步了解<i class="iconfont"></i></a>
+  </div>
+  */
+  .fa_More5 a {
+    display: inline-block;
+    background: #da251d;
+    transition: all 0.5s;
+    min-width: 180px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    font-size:16px;
+    border-radius:500px;
+  }
+  .fa_More5 a:before {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    top: 100%;
+    transition: all 0.5s;
+    background: rgba(255, 255, 255, 0.2);
+    content: "";
+    display: block;
+    left: 0;
+  }
+  .fa_More5 a:hover:before {
+    top: -10px;
+  }
+  .fa_More5 a:after {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    bottom: 100%;
+    transition: all 0.5s;
+    background: rgba(255, 255, 255, 0.2);
+    content: "";
+    display: block;
+    left: 0;
+  }
+  .fa_More5 a:hover:after {
+    bottom: -10px;
+  }
+  .fa_More5 a i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: all 0.5s;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fa_More5 a:hover i {
+    margin-left: 20px;
+  }
+  .fa_More5 a:hover {
+    background: #da251d;
+  }
+  /*
+  <div class="fa_More6"><a href="/Company.html">查看详情</a></div>
+  */
+  .fa_More6 a {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #da251d;
+    transition: all 0.5s;
+    min-width: 140px;
+    font-family:"bc-m";
+  }
+  .fa_More6 a:before {
+    content: "\f054";
+    font-family: FontAwesome;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 50% 50% 0;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+  }
+  .fa_More6 a:hover {
+    text-indent: 30px;
+  }
+  .fa_More6 a:hover:before {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    text-indent: 0;
+  }
+  .fa_More7 i{
+    font-size:1.5vw;
+    position:absolute;
+    top:50%;
+    transform:translate(-50%,-50%);
+    left:50%;
+    color:#da251d;
+    display:inline-block;
+    transition:all 0.5s;
+  }
+  .fa_More7 span{
+    position:absolute;
+    top:50%;
+    transform:translate(-150%,-50%);
+    left:50%;
+    display:inline-block;
+    transition:all 0.5s;
+    opacity:0;
+    color:#fff;
+  }
+  .fa_More7 a:hover span{
+    transform:translate(-50%,-50%);
+    opacity:1;
+  }
+  .fa_More7 a:hover i{
+    transform:translate(50%,-50%);
+    opacity:0;
+  }
+  .fa_More7 a{
+    width:3vw;
+    height:3vw;
+    border-radius:50%;
+    display:inline-block;
+    border:#da251d solid 1px;
+    text-align:center;
+    position:relative;
+    transition:all 0.5s;
+  }
+  .fa_More7 a:hover{
+    background:#da251d;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .fa_More a {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #da251d;
+    color: #fff;
+    text-align: center;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+.mouse_bac:hover{
+  background-color: #f5f5f5;
+  color: #da251d;
+}
+::-webkit-scrollbar{
+  width:5px;
+  height:40px;
+}
+::-webkit-scrollbar-track{
+  background-color:#eee;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#da251d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color:#eee}
+::-webkit-scrollbar-thumb:active {
+  background-color:#eee}
